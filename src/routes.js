@@ -5,12 +5,13 @@ const routes = [
   {
     path: '/',
     title: "Homepage",
-    element: <Homepage />
+    element: <Homepage />,
+    exact: true,
   },
   {
     path: '*',
     title: "",
-    element: <NoMatch />
+    element: <NoMatch />,
   }  
 ];
 
