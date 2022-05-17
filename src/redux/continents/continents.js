@@ -1,45 +1,44 @@
-import { FaLastfmSquare } from "react-icons/fa";
-import continentsInitialData from "./initial-data";
+import continentsInitialData from './initial-data';
 
-// Actions 
+// Actions
 const GET_CONTINENTS_SUCCESS = '/covid-tracker/GET_CONTINENTS_SUCCESS';
 const GET_CONTINENTS_LOADING = '/covid-tracker/GET_CONTINENTS_LOADING';
 const GET_CONTINENTS_FAILED = '/covid-tracker/GET_CONTINENTS_FAILED';
 
-// Action creators 
+// Action creators
 export const continentsSuccess = (continents) => (
-    {
-      type: GET_CONTINENTS_SUCCESS,
-      payload: continents
-    });
-export const continentsLoading = () => ({type: GET_CONTINENTS_LOADING});
+  {
+    type: GET_CONTINENTS_SUCCESS,
+    payload: continents,
+  });
+export const continentsLoading = () => ({ type: GET_CONTINENTS_LOADING });
 export const continentsFailed = (msg) => ({
   type: GET_CONTINENTS_FAILED,
-  payload: msg
+  payload: msg,
 });
 
 // continents reducer
 
-export default continents = (state = continentsInitialData, action) => {
-  switch(action.type) {
+export default function continents(state = continentsInitialData, action) {
+  switch (action.type) {
     case GET_CONTINENTS_LOADING:
       return {
         ...state,
-        loading: true
+        loading: true,
       };
     case GET_CONTINENTS_SUCCESS:
       return {
         ...state,
         loading: false,
-        continents: action.payload,        
+        continents: action.payload,
       };
     case GET_CONTINENTS_FAILED:
       return {
         ...state,
         loading: false,
-        errMsg: action.payload
+        errMsg: action.payload,
       };
     default:
       return state;
   }
-};
+}

@@ -1,7 +1,7 @@
 const continentsInitialData = {
   continents: [],
   loading: false,
-  errMsg: null
-}
+  errMsg: null,
+};
 
 export default continentsInitialData;

@@ -4,7 +4,7 @@ import logger from 'redux-logger';
 import continents from './continents/continents';
 
 const rootReducer = combineReducers({
-  continents
+  continents,
 });
 
 const store = createStore(rootReducer, applyMiddleware(logger, thunk));
