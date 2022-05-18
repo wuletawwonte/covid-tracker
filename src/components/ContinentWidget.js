@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import style from './ContinentWidget.module.css';
 
@@ -11,6 +13,7 @@ const ContinentWidget = (props) => {
         <h3>{name}</h3>
         <h4>{deaths}</h4>
       </div>
+      <Link to="hey" type="button" className={style.details}><FaRegArrowAltCircleRight className={style.nextIcon} /></Link>
     </div>
   );
 };

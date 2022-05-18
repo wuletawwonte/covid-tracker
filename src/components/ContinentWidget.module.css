@@ -20,12 +20,26 @@
 
 .text {
   text-align: end;
+  text-decoration: none;
 }
 
 .text > h3 {
   font-size: 4vw;
+  text-transform: capitalize;
 }
 
 .text > h4 {
   font-size: 3vw;
+}
+
+.details {
+  position: absolute; 
+  margin-left: 40vw;
+  margin-top: 2vw;
+}
+
+.nextIcon {
+  color: var(--white);
+  height: 4vw;
+  width: 4vw;
 }
