@@ -3,7 +3,7 @@
   flex-direction: column;
   background-color: var(--cont-bg-1);
   color: var(--white);
-  padding: 5px;
+  padding: 10px;
 }
 
 .continent:nth-child(3n-3) {
@@ -15,9 +15,17 @@
 }
 
 .continentImage {
-  padding: 0 10px;
+  padding: 0 25px;
 }
 
 .text {
   text-align: end;
+}
+
+.text > h3 {
+  font-size: 4vw;
+}
+
+.text > h4 {
+  font-size: 3vw;
 }

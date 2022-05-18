@@ -17,7 +17,7 @@ const ContinentWidget = (props) => {
 
 ContinentWidget.propTypes = {
   name: PropTypes.string.isRequired,
-  deaths: PropTypes.string.isRequired,
+  deaths: PropTypes.number.isRequired,
 };
 
 export default ContinentWidget;
