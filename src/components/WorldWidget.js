@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { ThreeDots } from 'react-loading-icons';
 import style from './WorldWidget.module.css';
 
 const WorldWidget = () => {
@@ -25,7 +26,7 @@ const WorldWidget = () => {
             {`${deathData} `}
             Deaths
           </h4>
-        ) : <h4>Loading...</h4>}
+        ) : <h4><ThreeDots className={style.loadingIcon} /></h4>}
       </div>
     </div>
   );

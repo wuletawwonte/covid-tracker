@@ -27,3 +27,9 @@
 .worldStats > h4 {
   font-size: 3vw;
 }
+
+.loadingIcon {
+  width: 5vw;
+  height: 3vw;
+  margin-left: 3px;
+}
