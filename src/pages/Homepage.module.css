@@ -1,0 +1,10 @@
+.continentsHeader {
+  background-color: var(--header-bg);
+  color: var(--white);
+  padding: 5px 20px;
+}
+
+.continentsHeader > h2 {
+  font-size: 3vw;
+  text-transform: uppercase;
+}

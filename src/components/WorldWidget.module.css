@@ -1,0 +1,39 @@
+.worldStatsContianer {
+  background-color: var(--cont-bg-3);
+  display: flex;
+}
+
+.worldStatsContianer > * {
+  flex-basis: 50vw;
+}
+
+.mapContainer {
+  padding: 40px 20px;
+}
+
+.worldMap {
+  width: 45vw;
+}
+
+.worldStats {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.worldStats > h3 {
+  font-size: 3.5vw;
+  text-transform: uppercase;
+}
+
+.worldStats > h4 {
+  font-size: 3vw;
+}
+
+.loadingIcon {
+  width: 5vw;
+  height: 3vw;
+  margin-left: 3px;
+}

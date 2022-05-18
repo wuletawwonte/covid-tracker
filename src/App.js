@@ -1,10 +1,12 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import routes from './routes';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Routes>
         {
           routes.map((route) => (
