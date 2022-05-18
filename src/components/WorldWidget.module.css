@@ -1,6 +1,6 @@
 .worldStatsContianer {
   background-color: var(--cont-bg-3);
-  display: flex;  
+  display: flex;
 }
 
 .worldStatsContianer > * {
