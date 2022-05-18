@@ -3,4 +3,21 @@
   flex-direction: column;
   background-color: var(--cont-bg-1);
   color: var(--white);
+  padding: 5px;
+}
+
+.continent:nth-child(3n-3) {
+  background-color: var(--cont-bg-2);
+}
+
+.continent:nth-child(2) {
+  background-color: var(--cont-bg-2);
+}
+
+.continentImage {
+  padding: 0 10px;
+}
+
+.text {
+  text-align: end;
 }

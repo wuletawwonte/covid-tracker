@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Oval } from 'react-loading-icons';
 import { getContinents } from '../redux/continents/continents';
 import ContinentWidget from './ContinentWidget';
+import style from './Continents.module.css';
 
 const Continents = () => {
   const continents = useSelector((state) => state.continents);
@@ -16,13 +17,17 @@ const Continents = () => {
   if (continents.status === 'LOADING') {
     content = <Oval stroke="var(--primary)" fill="var(--primary" height="2rem" />;
   } else if (continents.status === 'SUCCESS') {
-    content = continents.continents.map((continent) => (
-      <ContinentWidget
-        key={continent.name}
-        name={continent.name}
-        deaths={continent.deaths}
-      />
-    ));
+    content = (
+      <div className={style.continents}>
+        {continents.continents.map((continent) => (
+          <ContinentWidget
+            key={continent.name}
+            name={continent.name}
+            deaths={continent.deaths}
+          />
+        ))}
+      </div>
+    );
   } else {
     content = (
       <h2>

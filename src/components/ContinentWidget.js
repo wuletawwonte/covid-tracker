@@ -6,9 +6,11 @@ const ContinentWidget = (props) => {
   const { name, deaths } = props;
   return (
     <div className={style.continent}>
-      <img src={`/images/${name}.png`} alt={name} />
-      <h2>{name}</h2>
-      <h3>{deaths}</h3>
+      <img className={style.continentImage} src={`/images/${name}.png`} alt={name} />
+      <div className={style.text}>
+        <h3>{name}</h3>
+        <h4>{deaths}</h4>
+      </div>
     </div>
   );
 };
