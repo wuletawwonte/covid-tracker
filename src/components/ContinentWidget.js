@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import style from './ContinentWidget.module.css';
 
 const ContinentWidget = (props) => {
   const { name, deaths } = props;
   return (
-    <div>
-      <img src={`../assets/images/${name}`} alt="What the he" />
+    <div className={style.continent}>
+      <img src={`/images/${name}.png`} alt={name} />
       <h2>{name}</h2>
       <h3>{deaths}</h3>
     </div>
