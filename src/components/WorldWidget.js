@@ -18,7 +18,9 @@ const WorldWidget = () => {
 
   return (
     <div className={style.worldStatsContianer}>
-      <img src="images/World.png" alt="World map" className={style.worldMap} />
+      <div className={style.mapContainer}>
+        <img src="images/World.png" alt="World map" className={style.worldMap} />
+      </div>
       <div className={style.worldStats}>
         <h3>World Widget</h3>
         {deathData ? (

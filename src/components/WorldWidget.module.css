@@ -7,8 +7,12 @@
   flex-basis: 50vw;
 }
 
+.mapContainer {
+  padding: 20px;
+}
+
 .worldMap {
-  width: 50vw;
+  width: 45vw;
 }
 
 .worldStats {
