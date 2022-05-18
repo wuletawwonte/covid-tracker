@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import BodyTitleBar from '../components/BodyTitleBar';
 import Widget from '../components/Widget';
 
 const ContinentPage = () => {
@@ -20,10 +21,7 @@ const ContinentPage = () => {
   return (
     <>
       <Widget location={continent} death={deathData} />
-      <h2>
-        HEllo
-        {continent}
-      </h2>
+      <BodyTitleBar title="Stats by Country" />
     </>
   );
 };

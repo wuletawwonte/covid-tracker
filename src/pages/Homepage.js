@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import BodyTitleBar from '../components/BodyTitleBar';
 import Continents from '../components/Continents';
 import Widget from '../components/Widget';
-import style from './Homepage.module.css';
 
 const Homepage = () => {
   const [deathData, setDeathData] = useState(null);
@@ -20,9 +20,7 @@ const Homepage = () => {
   return (
     <>
       <Widget death={deathData} location="World" />
-      <div className={style.continentsHeader}>
-        <h2>Continental Death Stats</h2>
-      </div>
+      <BodyTitleBar title="Continental Death Stats" />
       <Continents />
     </>
   );

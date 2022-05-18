@@ -12,7 +12,11 @@ const Widget = (props) => {
         <img src={`/images/${location}.png`} alt={location} className={style.worldMap} />
       </div>
       <div className={style.worldStats}>
-        <h3>Global Data</h3>
+        <h3>
+          {location}
+          {' '}
+          Data
+        </h3>
         {death ? (
           <h4>
             {`${death} `}
