@@ -30,8 +30,8 @@ export const getContinents = () => (dispatch) => {
       }));
       dispatch(continentsSuccess(newContinents));
     })
-    .catch((errMsg) => {
-      dispatch(continentsFailed(errMsg));
+    .catch((err) => {
+      dispatch(continentsFailed(JSON.stringify(err.message)));
     });
 };
 
@@ -42,18 +42,18 @@ export default function continents(state = continentsInitialData, action) {
     case GET_CONTINENTS_LOADING:
       return {
         ...state,
-        loading: true,
+        status: 'LOADING',
       };
     case GET_CONTINENTS_SUCCESS:
       return {
         ...state,
-        loading: false,
+        status: 'SUCCESS',
         continents: action.payload,
       };
     case GET_CONTINENTS_FAILED:
       return {
         ...state,
-        loading: false,
+        status: 'FAILED',
         errMsg: action.payload,
       };
     default:

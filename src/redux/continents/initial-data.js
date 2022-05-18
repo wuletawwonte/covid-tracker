@@ -1,6 +1,6 @@
 const continentsInitialData = {
   continents: [],
-  loading: false,
+  status: 'LOADING',
   errMsg: null,
 };
 
