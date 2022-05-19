@@ -21,3 +21,16 @@
 h1 {
   font-family: 'Gill Sans', sans-serif;
 }
+
+.loadingIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  gap: 20px;
+}
+
+.loadingIcon > h4 {
+  font-weight: 300;
+}

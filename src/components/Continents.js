@@ -16,7 +16,7 @@ const Continents = () => {
   let content;
   if (continents.status === 'LOADING') {
     content = (
-      <div className={style.loadingIcon}>
+      <div className="loadingIcon">
         <Bars stroke="var(--primary)" fill="var(--primary" height="3rem" />
         <h4>Loading...</h4>
       </div>
