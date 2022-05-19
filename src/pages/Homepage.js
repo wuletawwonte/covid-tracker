@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BodyTitleBar from '../components/BodyTitleBar';
 import Continents from '../components/Continents';
+import Navbar from '../components/Navbar';
 import Widget from '../components/Widget';
 
 const Homepage = () => {
@@ -19,6 +20,7 @@ const Homepage = () => {
 
   return (
     <>
+      <Navbar />
       <Widget death={deathData} location="World" />
       <BodyTitleBar title="Continental Death Stats" />
       <Continents />
