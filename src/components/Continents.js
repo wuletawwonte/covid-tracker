@@ -29,6 +29,7 @@ const Continents = () => {
             key={continent.name}
             name={continent.name}
             deaths={continent.deaths}
+            countries={continent.countries}
           />
         ))}
       </div>
