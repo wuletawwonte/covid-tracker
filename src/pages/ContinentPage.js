@@ -22,7 +22,7 @@ const ContinentPage = () => {
   return (
     <>
       <Widget location={continent} death={deathData} />
-      <BodyTitleBar title="Stats by Country" />
+      <BodyTitleBar title="Death Stats by Country" />
       <Countries location={continent} />
     </>
   );
