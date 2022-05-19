@@ -37,7 +37,7 @@ const FilteredCountries = (props) => {
 };
 
 FilteredCountries.propTypes = {
-  countries: PropTypes.shape([]).isRequired,
+  countries: PropTypes.arrayOf({ name: PropTypes.string, deaths: PropTypes.number }).isRequired,
 };
 
 export default FilteredCountries;

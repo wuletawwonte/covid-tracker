@@ -21,7 +21,8 @@
   gap: 10px;
 }
 
-.countryItem h3, .countryItem h2 {
+.countryItem h3,
+.countryItem h2 {
   margin-bottom: 3px;
 }
 
