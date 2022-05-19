@@ -19,13 +19,13 @@ export const countriesFailed = (msg) => ({
   payload: msg,
 });
 
-export const getCountries = () => (dispatch) => {
+export const getCountries = (countriesContinent) => (dispatch) => {
   dispatch(countriesLoading());
-  fetch(URL)
+  fetch(URL + countriesContinent)
     .then((response) => response.json())
     .then((data) => {
       const newCountries = data.map((cont) => ({
-        name: cont.continent,
+        name: cont.country,
         deaths: cont.deaths,
       }));
       dispatch(countriesSuccess(newCountries));
