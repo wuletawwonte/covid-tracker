@@ -24,3 +24,25 @@
 .countryItem h3, .countryItem h2 {
   margin-bottom: 3px;
 }
+
+.searchContainer {
+  background-color: var(--cont-bg-3);
+  padding: 5px 15px;
+  display: flex;
+}
+
+.search {
+  flex-grow: 1;
+  border: none;
+  border-radius: 25px;
+  height: 30px;
+  padding-left: 15px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search:focus {
+  outline: none;
+}

@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Bars } from 'react-loading-icons';
 import { getCountries } from '../redux/countries/countries';
-import style from './Countries.module.css';
+import FilteredCountries from './FilteredCountries';
 
 const Countries = (props) => {
   const currentCountries = useSelector((state) => state.countries);
@@ -25,19 +23,7 @@ const Countries = (props) => {
       </div>
     );
   } else if (currentCountries.status === 'SUCCESS') {
-    content = (
-      <div>
-        {currentCountries.countries.map((country) => (
-          <div key={country.name} className={style.countryItem}>
-            <h2>{country.name}</h2>
-            <div className={style.countryStats}>
-              <h3>{`${country.deaths}`}</h3>
-              <Link to={`/country/${country.name}`} type="button" className={style.details}><FaRegArrowAltCircleRight className="nextIcon" /></Link>
-            </div>
-          </div>
-        ))}
-      </div>
-    );
+    content = <FilteredCountries countries={currentCountries.countries} />;
   } else {
     content = (
       <h2>
@@ -47,7 +33,11 @@ const Countries = (props) => {
     );
   }
 
-  return (<>{content}</>);
+  return (
+    <>
+      {content}
+    </>
+  );
 };
 
 Countries.propTypes = {
