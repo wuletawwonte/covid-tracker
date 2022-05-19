@@ -19,12 +19,12 @@ export const countriesFailed = (msg) => ({
   payload: msg,
 });
 
-export const getCountries = (countriesContinent) => (dispatch) => {
+export const getCountries = (location) => (dispatch) => {
   dispatch(countriesLoading());
-  fetch(URL + countriesContinent)
+  fetch(URL)
     .then((response) => response.json())
     .then((data) => {
-      const newCountries = data.map((cont) => ({
+      const newCountries = data.filter((cont) => cont.continent === location).map((cont) => ({
         name: cont.country,
         deaths: cont.deaths,
       }));

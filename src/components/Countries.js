@@ -1,21 +1,19 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Bars } from 'react-loading-icons';
 import { getCountries } from '../redux/countries/countries';
 import style from './Countries.module.css';
 
 const Countries = (props) => {
-  const continents = useSelector((state) => state.continents.continents);
   const currentCountries = useSelector((state) => state.countries);
   const { location } = props;
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const { countries } = continents.find((cont) => cont.name === location);
-    dispatch(getCountries(countries));
+    dispatch(getCountries(location));
   }, []);
 
   let content;
