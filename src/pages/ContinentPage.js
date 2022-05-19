@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import BodyTitleBar from '../components/BodyTitleBar';
 import Countries from '../components/Countries';
-import Navbar from '../components/Navbar';
+import CountriesNavbar from '../components/CountriesNavbar';
 import Widget from '../components/Widget';
 
 const ContinentPage = () => {
@@ -22,7 +22,7 @@ const ContinentPage = () => {
 
   return (
     <>
-      <Navbar />
+      <CountriesNavbar />
       <Widget location={continent} death={deathData} />
       <BodyTitleBar title="Death Stats by Country" />
       <Countries location={continent} />
