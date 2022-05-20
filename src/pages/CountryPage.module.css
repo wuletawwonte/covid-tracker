@@ -1,0 +1,36 @@
+.countryHeader {
+  background: url(../assets/corona-bg.png) right center, #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  max-height: 400px;
+  color: var(--white);
+  padding: 0 0 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.countryFlagName {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.countryFlagName img {
+  width: 120px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.detailItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px;
+  background-color: var(--cont-bg-1);
+  color: var(--white);
+}
+
+.detailItem:nth-child(even) {
+  background-color: var(--cont-bg-2);
+}
