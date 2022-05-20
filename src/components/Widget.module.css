@@ -1,5 +1,6 @@
 .worldStatsContianer {
   background-color: var(--cont-bg-3);
+  height: 30vw;
   display: flex;
 }
 
@@ -8,11 +9,14 @@
 }
 
 .mapContainer {
-  padding: 40px 20px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .worldMap {
-  width: 45vw;
+  height: 25vw;
 }
 
 .worldStats {

@@ -1,4 +1,4 @@
-header {
+.header {
   background-color: var(--primary);
   color: white;
   height: 60px;
@@ -9,17 +9,17 @@ header {
   font-size: 11px;
 }
 
-.nb-icon {
-  height: 20px;
-  width: 20px;
+.nbIcon {
+  height: 25px;
+  width: 25px;
   cursor: pointer;
 }
 
-.navbar-right {
+.navbarRight {
   display: flex;
   gap: 10px;
 }
 
-header > h1 {
+.header > h1 {
   margin-top: 9px;
 }

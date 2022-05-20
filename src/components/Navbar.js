@@ -1,23 +1,17 @@
 import React from 'react';
-import { FaBars, FaCog, FaMicrophone } from 'react-icons/fa';
-import './Navbar.css';
+import { FaBars, FaRegSun } from 'react-icons/fa';
+import style from './Navbar.module.css';
 
-export default class Navbar extends React.Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
-
-  render = () => (
+export default function Navbar() {
+  return (
     <>
-      <header>
-        <FaBars className="nb-icon" />
+      <header className={style.header}>
+        <FaBars className={style.nbIcon} />
         <h1>Covid Tracker</h1>
-        <div className="navbar-right">
-          <FaMicrophone className="nb-icon" />
-          <FaCog className="nb-icon" />
+        <div className={style.navbarRight}>
+          <FaRegSun className={style.nbIcon} />
         </div>
       </header>
     </>
-  )
+  );
 }
