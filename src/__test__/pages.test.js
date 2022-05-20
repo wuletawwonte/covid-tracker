@@ -3,8 +3,8 @@ import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import store from '../redux/configureStore';
-import Homepage from '../pages/Homepage.js';
-import ContinentPage from '../pages/ContinentPage.js';
+import Homepage from '../pages/Homepage';
+import ContinentPage from '../pages/ContinentPage';
 import CountryPage from '../pages/CountryPage';
 
 describe('Testing if all pages render correctly', () => {
