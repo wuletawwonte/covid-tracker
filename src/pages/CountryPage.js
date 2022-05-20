@@ -24,7 +24,10 @@ const CountryPage = () => {
             <div className={style.countryHeader}>
               <div className={style.countryFlagName}>
                 <img src={countryDetails.countryInfo.flag} alt={countryDetails.country} />
-                <h2>{countryDetails.country}</h2>
+                <div>
+                  <h2>{countryDetails.country}</h2>
+                  <h5>{`Population: ${countryDetails.population}`}</h5>
+                </div>
               </div>
             </div>
             <div>
