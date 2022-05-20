@@ -2,7 +2,7 @@
 
 <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 
-> This webapp provides Covid-19 Tracking information using the data it gets from an [API data source](https://covid19tracking.narrativa.com/index_en.html) to provide comprehensive information about the novel coronavirus, 
+> This webapp provides Covid-19 Tracking information using the data it gets from an [API data source](https://corona.lmao.ninja) to provide comprehensive information about the novel coronavirus, 
 > 
 It is created with [Create-React-App](https://github.com/facebook/create-react-app)
 
@@ -22,8 +22,8 @@ For the live version of this project visit the following [Netlify](https://globa
 ## Get started
 
 ```bash
-   git clone git@github.com:wuletawwonte/covid-tracker.git
-   cd into the folder by typing: cd Space-Travelers
+   git clone https://github.com/wuletawwonte/covid-tracker.git
+   cd into the folder by typing: cd covid-tracker
 ```
 
  :heavy_plus_sign: add your contribution if you'd like
@@ -55,7 +55,7 @@ For the live version of this project visit the following [Netlify](https://globa
 ## 🤝 Contributing
 All contributions, issues and feature requests are welcome!
 
-1. Fork it (https://github.com/Mesi21/Space-Travelers.git)
+1. Fork it (https://github.com/wuletawwonte/covid-tracker.git)
 2. Create your working branch (git checkout -b [choose-a-name])
 3. Commit your changes (git commit -am 'what this commit will fix/add/improve')
 4. Push to the branch (git push origin [chosen-name])
