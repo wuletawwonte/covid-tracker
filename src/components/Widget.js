@@ -29,7 +29,7 @@ const Widget = (props) => {
 };
 
 Widget.propTypes = {
-  death: PropTypes.number,
+  death: PropTypes.string,
   location: PropTypes.string.isRequired,
 };
 
