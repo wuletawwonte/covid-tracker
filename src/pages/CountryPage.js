@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import CountriesNavbar from '../components/CountriesNavbar';
+import SubpageNavbar from '../components/SubpageNavbar';
 
 const CountryPage = () => {
   const { country } = useParams();
@@ -16,7 +16,7 @@ const CountryPage = () => {
 
   return (
     <>
-      <CountriesNavbar />
+      <SubpageNavbar />
       <h2>Country page</h2>
       <h2>{country}</h2>
       <h2>{JSON.stringify(countryDetails)}</h2>
