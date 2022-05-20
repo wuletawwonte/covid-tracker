@@ -9,11 +9,15 @@ It is created with [Create-React-App](https://github.com/facebook/create-react-a
 ---
 
 ## Screenshot
+| Homepage |   Continent Page |
+| ---------- | ----------- |
+ | ![homepage](https://user-images.githubusercontent.com/12524453/169500638-1745a544-6509-4132-8615-27a503cfc109.png) | ![continentpage](https://user-images.githubusercontent.com/12524453/169500557-ead21724-7e92-4471-8ab7-66dbfaabb8e3.png) |
+</p>
 
 
 ## Live version
 
-For the live version of this project visit the following [Netlify](https:// .app/) and [Heroku](https:// .herokuapp.com/) links.
+For the live version of this project visit the following [Netlify](https://global-covid-data-tracker.netlify.app/) link.
 
 ## Get started
 
@@ -42,6 +46,11 @@ For the live version of this project visit the following [Netlify](https:// .app
   - [LinkedIn](https://www.linkedin.com/in/wuletaw-wonte/).  
   - [Twitter](https://twitter.com/wuletaww) 
 
+## Acknowledgments
+
+- [Microverse](https://www.microverse.org/)
+- External API from https://corona.lmao.ninja
+- Original design idea (Ballhead App (Free PSDs)) by Nelson Sakwa [Website](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 
 ## 🤝 Contributing
 All contributions, issues and feature requests are welcome!
