@@ -1,0 +1,9 @@
+.countryHeader {
+  background: url(../assets/corona-bg.png) right center, #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  max-height: 400px;
+  color: var(--white);
+  padding: 20px;
+}
