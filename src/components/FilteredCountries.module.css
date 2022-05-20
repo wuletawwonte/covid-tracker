@@ -1,0 +1,49 @@
+.countryItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+  background-color: var(--cont-bg-2);
+  color: var(--white);
+  font-size: 15px;
+}
+
+.countryItem:nth-child(even) {
+  background-color: var(--cont-bg-1);
+}
+
+.countryItem:hover {
+  background-color: var(--cont-bg-3);
+}
+
+.countryStats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.countryItem h3,
+.countryItem h2 {
+  margin-bottom: 3px;
+}
+
+.searchContainer {
+  background-color: var(--cont-bg-3);
+  padding: 5px 15px;
+  display: flex;
+}
+
+.search {
+  flex-grow: 1;
+  border: none;
+  border-radius: 25px;
+  height: 30px;
+  padding-left: 15px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search:focus {
+  outline: none;
+}

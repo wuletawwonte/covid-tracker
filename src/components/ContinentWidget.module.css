@@ -1,0 +1,39 @@
+.continent {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cont-bg-1);
+  color: var(--white);
+  padding: 10px;
+}
+
+.continent:nth-child(3n-3) {
+  background-color: var(--cont-bg-2);
+}
+
+.continent:nth-child(2) {
+  background-color: var(--cont-bg-2);
+}
+
+.continentImage {
+  padding: 0 25px;
+}
+
+.text {
+  text-align: end;
+  text-decoration: none;
+}
+
+.text > h3 {
+  font-size: 3.5vw;
+  text-transform: uppercase;
+}
+
+.text > h4 {
+  font-size: 3vw;
+}
+
+.details {
+  position: absolute;
+  margin-left: 40vw;
+  margin-top: 2vw;
+}

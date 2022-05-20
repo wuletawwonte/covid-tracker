@@ -1,0 +1,43 @@
+.worldStatsContianer {
+  background-color: var(--cont-bg-3);
+  height: 30vw;
+  display: flex;
+}
+
+.worldStatsContianer > * {
+  flex-basis: 50vw;
+}
+
+.mapContainer {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.worldMap {
+  height: 25vw;
+}
+
+.worldStats {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.worldStats > h3 {
+  font-size: 3.5vw;
+  text-transform: uppercase;
+}
+
+.worldStats > h4 {
+  font-size: 3vw;
+}
+
+.loadingIcon {
+  width: 5vw;
+  height: 3vw;
+  margin-left: 3px;
+}
