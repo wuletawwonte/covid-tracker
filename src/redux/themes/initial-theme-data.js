@@ -15,4 +15,6 @@ const themes = [
     widgetBgLight: '#db4680',
     widgetBgDark: '#cf4277',
   },
-]
+];
+
+export default themes;
