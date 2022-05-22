@@ -15,9 +15,19 @@
   cursor: pointer;
 }
 
+.nbIconWithText {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
 .navbarRight {
   display: flex;
   gap: 10px;
+  align-items: center;
+  border: 1px solid white;
+  padding: 6px 10px;
+  cursor: pointer;
 }
 
 .header > h1 {
