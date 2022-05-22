@@ -1,4 +1,4 @@
-const themes = [
+const themesData = [
   {
     title: 'Blue',
     navbarBg: '#4369b2',
@@ -17,4 +17,4 @@ const themes = [
   },
 ];
 
-export default themes;
+export default themesData;
