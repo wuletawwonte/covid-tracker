@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import SubpageNavbar from '../components/SubpageNavbar';
 import style from './CountryPage.module.css';
 
 const CountryPage = () => {
   const { country } = useParams();
+  const theme = useSelector((state) => state.themes.theme);
   const [countryDetails, setCountryDetails] = useState(null);
 
   useEffect(() => {
@@ -31,51 +33,51 @@ const CountryPage = () => {
               </div>
             </div>
             <div>
-              <div className={style.detailItem}>
+              <div className={style.detailItem} style={{ backgroundColor: theme.widgetBgDark }}>
                 <h3>Cases</h3>
                 <h3>{countryDetails.cases}</h3>
               </div>
-              <div className={style.detailItem}>
+              <div className={style.detailItem} style={{ backgroundColor: theme.widgetBgLight }}>
                 <h3>Recovered</h3>
                 <h3>{countryDetails.recovered}</h3>
               </div>
-              <div className={style.detailItem}>
+              <div className={style.detailItem} style={{ backgroundColor: theme.widgetBgDark }}>
                 <h3>Active</h3>
                 <h3>{countryDetails.active}</h3>
               </div>
-              <div className={style.detailItem}>
+              <div className={style.detailItem} style={{ backgroundColor: theme.widgetBgLight }}>
                 <h3>Critical</h3>
                 <h3>{countryDetails.critical}</h3>
               </div>
-              <div className={style.detailItem}>
+              <div className={style.detailItem} style={{ backgroundColor: theme.widgetBgDark }}>
                 <h3>Tests</h3>
                 <h3>{countryDetails.tests}</h3>
               </div>
-              <div className={style.detailItem}>
+              <div className={style.detailItem} style={{ backgroundColor: theme.widgetBgLight }}>
                 <h3>TestsPerOneMillion</h3>
                 <h3>{countryDetails.testsPerOneMillion}</h3>
               </div>
-              <div className={style.detailItem}>
+              <div className={style.detailItem} style={{ backgroundColor: theme.widgetBgDark }}>
                 <h3>OneCasePerPeople</h3>
                 <h3>{countryDetails.oneCasePerPeople}</h3>
               </div>
-              <div className={style.detailItem}>
+              <div className={style.detailItem} style={{ backgroundColor: theme.widgetBgLight }}>
                 <h3>OneDeathPerPeople</h3>
                 <h3>{countryDetails.oneDeathPerPeople}</h3>
               </div>
-              <div className={style.detailItem}>
+              <div className={style.detailItem} style={{ backgroundColor: theme.widgetBgDark }}>
                 <h3>OneTestPerPeople</h3>
                 <h3>{countryDetails.oneTestPerPeople}</h3>
               </div>
-              <div className={style.detailItem}>
+              <div className={style.detailItem} style={{ backgroundColor: theme.widgetBgLight }}>
                 <h3>ActivePerOneMillion</h3>
                 <h3>{countryDetails.activePerOneMillion}</h3>
               </div>
-              <div className={style.detailItem}>
+              <div className={style.detailItem} style={{ backgroundColor: theme.widgetBgDark }}>
                 <h3>RecoveredPerOneMillion</h3>
                 <h3>{countryDetails.recoveredPerOneMillion}</h3>
               </div>
-              <div className={style.detailItem}>
+              <div className={style.detailItem} style={{ backgroundColor: theme.widgetBgLight }}>
                 <h3>CriticalPerOneMillion</h3>
                 <h3>{countryDetails.criticalPerOneMillion}</h3>
               </div>
