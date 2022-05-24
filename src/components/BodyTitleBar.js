@@ -1,13 +1,25 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
-import style from './BodyTitleBar.module.css';
 
 const BodyTitleBar = (props) => {
   const { title } = props;
+  const theme = useSelector((state) => state.themes.theme);
+
+  const myStyle = {
+    backgroundColor: theme.headerBg,
+    color: 'var(--white)',
+    padding: '5px 20px',
+  };
+
+  const myTitleStyle = {
+    fontSize: '3vw',
+    textTransform: 'uppercase',
+  };
 
   return (
-    <div className={style.continentsHeader}>
-      <h2>{title}</h2>
+    <div style={myStyle}>
+      <h2 style={myTitleStyle}>{title}</h2>
     </div>
   );
 };

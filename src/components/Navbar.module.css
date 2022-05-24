@@ -15,11 +15,56 @@
   cursor: pointer;
 }
 
+.nbIconWithText {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
 .navbarRight {
   display: flex;
-  gap: 10px;
+  gap: 5px;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  position: relative;
+}
+
+.navbarRight:hover,
+.navbarRight:focus {
+  background-color: black;
 }
 
 .header > h1 {
   margin-top: 9px;
+}
+
+.dropDownMenu {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 35px;
+  border-radius: 3px;
+  background-color: var(--header-bg);
+  width: 90px;
+  padding: 8px;
+}
+
+.dropDownMenu li {
+  color: white;
+  list-style: none;
+  text-align: left;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dropDownMenu li:hover {
+  background-color: black;
+  border-radius: 3px;
 }
