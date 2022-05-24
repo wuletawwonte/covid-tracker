@@ -27,7 +27,6 @@
 }
 
 .searchContainer {
-  background-color: var(--cont-bg-3);
   padding: 5px 15px;
   display: flex;
 }
