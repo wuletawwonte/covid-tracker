@@ -11,8 +11,7 @@ It is created with [Create-React-App](https://github.com/facebook/create-react-a
 ## Screenshot
 | Homepage |   Continent Page |
 | ---------- | ----------- |
- | ![Peek 2022-05-25 01-01](https://user-images.githubusercontent.com/12524453/170140297-e19156b6-af2f-4286-9449-9560bdc78166.gif)
- | ![continentpage](https://user-images.githubusercontent.com/12524453/169500557-ead21724-7e92-4471-8ab7-66dbfaabb8e3.png) |
+| ![Peek 2022-05-25 01-01](https://user-images.githubusercontent.com/12524453/170140297-e19156b6-af2f-4286-9449-9560bdc78166.gif) | ![continentpage](https://user-images.githubusercontent.com/12524453/169500557-ead21724-7e92-4471-8ab7-66dbfaabb8e3.png) |
 </p>
 
 
