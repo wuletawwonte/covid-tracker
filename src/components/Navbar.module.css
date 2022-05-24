@@ -34,7 +34,8 @@
   position: relative;
 }
 
-.navbarRight:hover, .navbarRight:focus {
+.navbarRight:hover,
+.navbarRight:focus {
   background-color: black;
 }
 
