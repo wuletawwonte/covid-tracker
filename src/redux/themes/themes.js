@@ -13,7 +13,7 @@ export default function themes(state = { theme: themesData[0] }, action) {
     case GET_THEME:
       return state;
     case CHANGE_THEME:
-      return { theme: themes.find((theme) => theme.title === action.payload) };
+      return { theme: themesData.find((theme) => theme.title === action.payload) };
     default:
       return state;
   }

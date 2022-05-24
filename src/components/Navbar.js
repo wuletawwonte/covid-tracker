@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { FaBars, FaAdjust } from 'react-icons/fa';
 import style from './Navbar.module.css';
+import { changeTheme } from '../redux/themes/themes';
 
 export default function Navbar() {
   const [menuToggle, setMenuToggle] = useState(false);
   const theme = useSelector((state) => state.themes.theme);
+  const dispatch = useDispatch();
   const myStyle = {
     backgroundColor: theme.navbarBg,
   };
@@ -18,6 +20,11 @@ export default function Navbar() {
     setMenuToggle(false);
   };
 
+  const handleClick = (e) => {
+    dispatch(changeTheme(e.target.dataset.title));
+    hideMenu();
+  };
+  /* eslint-disable */
   return (
     <>
       <header className={style.header} style={myStyle}>
@@ -30,9 +37,8 @@ export default function Navbar() {
         && (
         <div className={style.dropDownMenu}>
           <ul>
-            <li>Blue</li>
-            <li>Pink</li>
-            <li>Black</li>
+            <li onClick={handleClick} data-title="Blue">Blue</li>
+            <li onClick={handleClick} data-title="Pink">Pink</li>
           </ul>
         </div>
         ) }
