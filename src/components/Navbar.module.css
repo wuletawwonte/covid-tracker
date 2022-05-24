@@ -46,7 +46,7 @@
   right: 0;
   left: 0;
   top: 35px;
-  background-color: black;
+  background-color: gray;
   width: 90px;
   padding: 5px;
 }
@@ -57,4 +57,8 @@
   padding: 5px;
   font-size: 18px;
   cursor: pointer;
+}
+
+.dropDownMenu li:hover {
+  background-color: black;
 }

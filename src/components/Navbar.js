@@ -19,7 +19,7 @@ export default function Navbar() {
       <header className={style.header} style={myStyle}>
         <FaBars className={style.nbIcon} />
         <h1>Covid Tracker</h1>
-        <button type="button" className={style.navbarRight} onClick={toggleMenu}>
+        <button type="button" className={style.navbarRight} onClick={toggleMenu} onBlur={toggleMenu}>
           <FaAdjust className={style.nbIconWithText} />
           <h3>Theme</h3>
           { menuToggle
