@@ -1,9 +1,3 @@
-.worldStatsContianer {
-  background-color: var(--cont-bg-3);
-  height: 30vw;
-  display: flex;
-}
-
 .worldStatsContianer > * {
   flex-basis: 50vw;
 }

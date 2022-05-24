@@ -1,13 +1,21 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { ThreeDots } from 'react-loading-icons';
 import PropTypes from 'prop-types';
 import style from './Widget.module.css';
 
 const Widget = (props) => {
   const { death, location } = props;
+  const theme = useSelector((state) => state.themes.theme);
+
+  const myStyle = {
+    backgroundColor: theme.heroBg,
+    height: '30vw',
+    display: 'flex',
+  };
 
   return (
-    <div className={style.worldStatsContianer}>
+    <div style={myStyle}>
       <div className={style.mapContainer}>
         <img src={`/images/${location}.png`} alt={location} className={style.worldMap} />
       </div>
