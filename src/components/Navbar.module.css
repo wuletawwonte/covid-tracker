@@ -7,7 +7,6 @@
   padding: 0 25px;
   justify-content: space-between;
   font-size: 11px;
-  position: relative;
 }
 
 .nbIcon {
@@ -31,6 +30,7 @@
   cursor: pointer;
   background-color: transparent;
   color: white;
+  position: relative;
 }
 
 .navbarRight:hover {
@@ -43,8 +43,9 @@
 
 .dropDownMenu {
   position: absolute;
-  right: 20px;
-  top: 50px;
+  right: 0;
+  left: 0;
+  top: 35px;
   background-color: black;
   width: 90px;
   padding: 5px;

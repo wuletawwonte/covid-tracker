@@ -22,8 +22,7 @@ export default function Navbar() {
         <button type="button" className={style.navbarRight} onClick={toggleMenu}>
           <FaAdjust className={style.nbIconWithText} />
           <h3>Theme</h3>
-        </button>
-        { menuToggle
+          { menuToggle
         && (
         <div className={style.dropDownMenu}>
           <ul>
@@ -33,6 +32,8 @@ export default function Navbar() {
           </ul>
         </div>
         ) }
+
+        </button>
       </header>
     </>
   );
