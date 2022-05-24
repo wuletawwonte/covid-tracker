@@ -14,12 +14,16 @@ export default function Navbar() {
     setMenuToggle(!menuToggle);
   };
 
+  const hideMenu = () => {
+    setMenuToggle(false);
+  };
+
   return (
     <>
       <header className={style.header} style={myStyle}>
         <FaBars className={style.nbIcon} />
         <h1>Covid Tracker</h1>
-        <button type="button" className={style.navbarRight} onClick={toggleMenu} onBlur={toggleMenu}>
+        <button type="button" className={style.navbarRight} onClick={toggleMenu} onBlur={hideMenu}>
           <FaAdjust className={style.nbIconWithText} />
           <h3>Theme</h3>
           { menuToggle

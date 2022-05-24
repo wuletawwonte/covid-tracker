@@ -25,7 +25,8 @@
   display: flex;
   gap: 5px;
   align-items: center;
-  border: 1px solid white;
+  border: none;
+  border-radius: 3px;
   padding: 6px 10px;
   cursor: pointer;
   background-color: transparent;
@@ -33,7 +34,7 @@
   position: relative;
 }
 
-.navbarRight:hover {
+.navbarRight:hover, .navbarRight:focus {
   background-color: black;
 }
 
@@ -46,19 +47,23 @@
   right: 0;
   left: 0;
   top: 35px;
-  background-color: gray;
+  border-radius: 3px;
+  background-color: var(--header-bg);
   width: 90px;
-  padding: 5px;
+  padding: 8px;
 }
 
 .dropDownMenu li {
   color: white;
   list-style: none;
+  text-align: left;
   padding: 5px;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
 }
 
 .dropDownMenu li:hover {
   background-color: black;
+  border-radius: 3px;
 }
